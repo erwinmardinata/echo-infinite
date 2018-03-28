@@ -1,0 +1,13 @@
+Login admin :
+ email : admin@admin.com
+ password : zz
+
+url login admin : localhost/echo-infinite/Adminpanel
+
+
+Maaf sebelumnya Mas...
+saya buatnya tidak menggunakan laravel, saya kelamaan di migrationnya Mas sering error.
+saya kerjakan nya dengan CodeIgniter biar waktu saya cepat selesai.
+
+
+Maaf sebelumnya Mas.
