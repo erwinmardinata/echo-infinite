@@ -1,53 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title><?php echo $title; ?></title>
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/image/logo/sumbawa.png"/>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo site_url(); ?>assets/image/logo/sijincow.jpg">
 
-		<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<link href="<?php echo base_url(); ?>assets/css/custom.css" rel="stylesheet">
-		
-		<script src="<?php echo base_url(); ?>assets/js/jquery-11.0.min.js"></script>
-		<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
-
-	</head>
-	<body> 	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="<?php echo site_url(); ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo site_url(); ?>assets/css/login.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="<?php echo site_url(); ?>assets/js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="<?php echo site_url(); ?>assets/js/bootstrap.min.js"></script>
+	  <script src="<?php echo site_url(); ?>assets/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
 	
-	<div class="navbar-fixed-top">
-		<nav class="navbar navbar-default" role="navigation">
-		  <div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="#">K L E A N I T Y .</a>
+    <title><?php echo $title; ?></title>
+  </head>
+  <body>
+  
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-10 offset-md-1">
+		
+			<?php echo $content; ?>
+		
+			<div class="copyright">
+				version EA 1.0<br>
+				Dinas Peternakan dan Kesehatan Hewan Kabupaten Sumbawa &copy; 2018
 			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			  <ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.html">HOME</a></li>
-				<li><a href="#">PAGES</a></li>
-				<li><a href="#">PORTOFOLIO</a></li>
-				<li><a href="#">BLOG</a></li>
-				<li><a href="#">GALLERY</a></li>
-				<li><a href="#">FEATURES</a></li>
-				<li><a href="#">SHOP</a></li>
-			  </ul>
-			</div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>					
+		</div>
+	  </div>
 	</div>
 
-	<?php echo $content; ?>
-	
-	</body>
+  </body>
 </html>

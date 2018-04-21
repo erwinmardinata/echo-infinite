@@ -23,17 +23,17 @@ class Front_Controller extends CI_Controller {
 
 	} 
 
-	function alert_info() {
+	function alert_info($text) {
 
-		$pesan = "<div class='alert alert-info'>Success !!!</div>";
+		$pesan = "<div class='alert alert-info text-center' style='border-radius: 0;font-size: 14px'>".$text."</div>";
 
 		$this->session->set_flashdata('message', $pesan);
 
 	}
 
-	function alert_error() {
+	function alert_error($text) {
 
-		$pesan = "<div class='alert alert-warning'>Failed !!!</div>";
+		$pesan = "<div class='alert alert-danger text-center' style='border-radius: 0;font-size: 14px'>".$text."</div>";
 
 		$this->session->set_flashdata('message', $pesan);
 

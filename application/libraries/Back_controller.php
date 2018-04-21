@@ -9,9 +9,9 @@ class Back_Controller extends CI_Controller {
 		parent::__construct();
 		date_default_timezone_set('Asia/Makassar');
 		
-		$cek = $this->session->userdata('logged_in');
+		// $cek = $this->session->userdata('logged_in');
 		
-		if(!($cek)) redirect('Adminpanel');
+		// if(!($cek)) redirect('Adminpanel');
 		
 	}
 
@@ -27,17 +27,17 @@ class Back_Controller extends CI_Controller {
 
 	} 
 
-	function alert_info() {
+	function alert_info($text) {
 			
-		$pesan = '<div class="alert alert-info" role="alert">Sukses!!!</div>';
+		$pesan = '<div class="alert alert-info text-center" style="border-radius: 0;font-size: 14px" role="alert">'.$text.'</div>';
 
 		$this->session->set_flashdata('message', $pesan);
 
 	}
 
-	function alert_error() {
+	function alert_error($text) {
 
-		$pesan = '<div class="alert alert-warning" role="alert">Gagal!!!</div>';
+		$pesan = '<div class="alert alert-warning text-center" style="border-radius: 0;font-size: 14px" role="alert">'.$text.'</div>';
 
 		$this->session->set_flashdata('message', $pesan);
 
@@ -45,7 +45,7 @@ class Back_Controller extends CI_Controller {
 	
 	function alert_error_upload($data) {
 
-		$pesan = '<div class="alert alert-warning" role="alert">'.$data.'</div>';
+		$pesan = '<div class="alert alert-warning text-center" style="border-radius: 0;font-size: 14px" role="alert">'.$data.'</div>';
 
 		$this->session->set_flashdata('message', $pesan);
 
